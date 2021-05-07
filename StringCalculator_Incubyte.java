@@ -7,64 +7,8 @@ import java.util.List;
 
 public class StringCalculator_Incubyte {
     public static void main(String[] args) {
-//all
-
-     /*   List<List<Integer>> listanswer = new ArrayList<>();
-        List<Integer> list1 = new ArrayList<>();
-        allLocations.forEach(S -> {
-            Integer min = 1000;
-            //x^2+y^2
-            int p = S.get(0) * S.get(0);
-            int m = S.get(1) * S.get(1);
-            int pm = p + m;
-            Integer l;
-            Integer pl = pm / 2;
-            do {
-                l = pl;
-                pl = (l + (pm / l)) / 2;
-            }
-            while ((l - pl) != 0);
-            Integer sqrt = pl;
-            if (sqrt < min) {
-                min = sqrt;
-                list1.add(min);
-            }
-        });
-        Integer min = 1000;
-        //int min=1000;
-
-        //list have all sqrt
-        // list1.forEach(S->);
-        //for(int i=0;i<list1.size();i++){
-        //  if(list1.get(i)<min){
-        //       min=list1.get(i);
-        // }
-        Object[] ob = list1.toArray();
-        Object[] p = list1.toArray();
-        //Object[] p=Arrays.sort(ob);
-        List<Integer> index = new ArrayList<>();
-//for(int i=0;i<numRestaurants;i++){
-        for (int j = 0; j < numRestaurants - 1; j++) {
-            for (int k = 0; k < p.length - 1; k++) {
-                if (ob[j] == p[k]) {
-                    index.add(j);
-                }
-
-            }
-        }
-
-        for (int i = 0; i < allLocations.size() - 1; i++) {
-            if (index.get(i) == i)
-                listanswer.add(allLocations.get(i));
-        }
-
-        return listanswer;*/
-        //  }
 
         String pd="//(1,%%^2,&&&*()10}/1//-9";
-
-        //String iresult=add(pd);
-        // if(ad)
         System.out.println(add(pd));
 
 
