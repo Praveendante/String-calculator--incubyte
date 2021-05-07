@@ -6,16 +6,20 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class StringCalculator_Incubyte {
+    public static int counter=0;
     public static void main(String[] args) {
 
         String pd="//(1,%%^2,&&&*()10}/1//-9";
         System.out.println(add(pd));
-
+        //counter can be tested by uncommenting below
+      /*  add(pd);
+        System.out.println(counter); */
 
     }
 
 
     public static String add(String p){
+        counter++;
         StringBuilder string1 = new StringBuilder(p);
         for(int i=0;i<p.length();i++){
             if(p.charAt(i)!='0' && p.charAt(i)!='1' && p.charAt(i)!='2'  && p.charAt(i)!='3' && p.charAt(i)!='4' && p.charAt(i)!='5' && p.charAt(i)!='6' && p.charAt(i)!='7' && p.charAt(i)!='8' && p.charAt(i)!='9' && p.charAt(i)!='-'){
