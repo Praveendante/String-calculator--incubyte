@@ -21,7 +21,8 @@ public class StringCalculator_Incubyte {
 
 
     public static String add(String p){
-        counter++;
+        //counter++;
+        GetCalledCount();
         StringBuilder string1 = new StringBuilder(p);
         for(int i=0;i<p.length();i++){
             if(p.charAt(i)!='0' && p.charAt(i)!='1' && p.charAt(i)!='2'  && p.charAt(i)!='3' && p.charAt(i)!='4' && p.charAt(i)!='5' && p.charAt(i)!='6' && p.charAt(i)!='7' && p.charAt(i)!='8' && p.charAt(i)!='9' && p.charAt(i)!='-'){
@@ -76,5 +77,8 @@ public class StringCalculator_Incubyte {
             s=""+a;
         }
         return s;
+    }
+    public static int GetCalledCount(){
+        return counter++;
     }
 }
