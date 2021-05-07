@@ -9,7 +9,9 @@ public class StringCalculator_Incubyte {
     public static int counter=0;
     public static void main(String[] args) {
 
-        String pd="//(1,%%^2,&&&*()10}/1//-9";
+      //  String pd="//(1,%%^2,&&&*()10}/1//-9";
+        Scanner s= new Scanner(System.in);
+        String pd=s.nextLine();
         System.out.println(add(pd));
         //counter can be tested by uncommenting below
       /*  add(pd);
