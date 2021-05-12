@@ -22,10 +22,10 @@ public class StringCalculator_Incubyte {
 
     public static String add(String p){
         //counter++;
-       GetCalledCount();
-        int a=0;
+         GetCalledCount();
+       // int a=0;
         String s="";
-        ArrayList<String> t= new ArrayList<>();
+        int add=0;
         List<Integer> negatives=new ArrayList<>();
         StringBuilder string1 = new StringBuilder(p);
         for(int i=0;i<p.length();i++){
@@ -37,7 +37,8 @@ public class StringCalculator_Incubyte {
 
         for(int i=0;i<poo.length;i++){
             if(!poo[i].equals("") && !poo[i].equals("-") && Integer.parseInt(poo[i])<1000 && Integer.parseInt(poo[i])>0){
-                t.add(poo[i]);
+              //  t.add(poo[i]);
+                add+=Integer.parseInt(poo[i]);
             }
             else if(!poo[i].equals("")  && !poo[i].equals("-") && Integer.parseInt(poo[i])<0 ){
                 negatives.add(Integer.parseInt(poo[i]));
@@ -47,9 +48,8 @@ public class StringCalculator_Incubyte {
             s="Negative is Not Allowed! given negative numbers are " + negatives;
         }
         else{
-
-            a= t.stream().mapToInt(Integer::parseInt).sum();
-            s=""+a;
+          //  a= t.stream().mapToInt(Integer::parseInt).sum();
+            s=""+add;
         }
         return s;
     }
