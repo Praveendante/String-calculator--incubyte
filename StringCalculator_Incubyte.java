@@ -30,10 +30,10 @@ public class StringCalculator_Incubyte {
         StringBuilder string1 = new StringBuilder(p);
         for(int i=0;i<p.length();i++){
             if(p.charAt(i)!='0' && p.charAt(i)!='1' && p.charAt(i)!='2'  && p.charAt(i)!='3' && p.charAt(i)!='4' && p.charAt(i)!='5' && p.charAt(i)!='6' && p.charAt(i)!='7' && p.charAt(i)!='8' && p.charAt(i)!='9' && p.charAt(i)!='-'){
-                string1.setCharAt(i,',');
+                string1.setCharAt(i,' ');
             }
         }
-        String[] poo=string1.toString().replaceAll(","," ").split(" ");
+        String[] poo=string1.toString().split(" ");
 
         for(int i=0;i<poo.length;i++){
             if(!poo[i].equals("") && !poo[i].equals("-") && Integer.parseInt(poo[i])<1000 && Integer.parseInt(poo[i])>0){
